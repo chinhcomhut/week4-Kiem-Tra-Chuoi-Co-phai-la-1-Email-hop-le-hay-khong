@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate email</title>
+</head>
+<body>
+<script>
+    function validateEmail(str) {
+      let checkEmail= /^[A-Za-z0-9]+\@[A-Za-z0-9]+\.[A-Za-z]{3}$/;
+      let rusult = checkEmail.test(str);
+      return rusult;
+    }
+    let str = 'chinhcomhut@gmail.com';
+    alert(validateEmail(str));
+    str = '@gmail.com'
+    alert(validateEmail(str));
+</script>
+</body>
+</html>
